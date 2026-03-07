@@ -19,7 +19,7 @@ print(nome, idade, end="...\n")
 print(nome, idade, sep="#", end="...\n")
 print(nome, idade, sep="#")
 
-#----------(meu experimento)--------
+#----------(meu experimento)---------
 nome = input("Informe o seu nome: ")
 idade = input("Informe a sua idade: ")
 
