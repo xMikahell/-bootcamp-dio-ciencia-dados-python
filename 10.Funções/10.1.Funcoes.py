@@ -109,4 +109,4 @@ op = somar
 print(op(1, 23))
 
 #Escopo local e escopo global
-#
+###apsiojdpo
