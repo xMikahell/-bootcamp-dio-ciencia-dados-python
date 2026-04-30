@@ -121,4 +121,25 @@ def salario_bonus(bonus):
     salario += bonus
     return salario
 
-salario_bonus(500)
+salario_com_bonus = salario_bonus(500)
+print(salario_com_bonus)
+
+#exemplo 2
+
+salario2 = 3000
+
+def salario2_bonus(bonus, lista):
+    global salario2
+
+    lista_aux = lista.copy()
+    lista_aux.append(2)
+    print(f"lista aux={lista_aux}")
+
+    salario2 += bonus
+    return salario2
+
+lista = [1]
+salario2_com_bonus = salario2_bonus(600, lista)
+print(salario_com_bonus)
+print(lista)
+
