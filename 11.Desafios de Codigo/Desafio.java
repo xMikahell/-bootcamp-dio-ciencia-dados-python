@@ -31,33 +31,26 @@ import java.util.Scanner;
 
 public class Desafio {
     public static void main(String[] args) {
-        //lê os valores de Entrada:
-        Scanner leitorDeEntradas = new Scanner(System.in);
-        float valorSalario = leitorDeEntradas.nextFloat();
-        float valorBeneficio = leitorDeEntradas.nextFloat();
-        
-        float valorImposto = 0;
 
-        if (valorSalario >= 0 && valorSalario <= 1100) {
-            //atribuiu a aliquota de 5% mediante o salario:
-            valorImposto = 0.05F * valorSalario;
+        try (Scanner leitorDeEntradas = new Scanner(System.in)) {
+
+            float valorSalario = leitorDeEntradas.nextFloat();
+            float valorBeneficio = leitorDeEntradas.nextFloat();
+
+            float valorImposto;
+
+            if (valorSalario <= 1100) {
+                valorImposto = 0.05F * valorSalario;
+            } else if (valorSalario <= 2500) {
+                valorImposto = 0.10F * valorSalario;
+            } else {
+                valorImposto = 0.15F * valorSalario;
+            }
+
+            float saida = valorSalario - valorImposto + valorBeneficio;
+
+            System.out.printf("%.2f%n", saida);
         }
-        //Todo criar  as demais condições para a aliquotas de 10.00% e 15.00%.
-        else if (valorSalario >= 1100.01 && valorSalario <= 2500) {
-            valorImposto = 0.10F * valorSalario;    
-        }
-        else {
-            valorImposto = 0.15F * valorSalario;  
-        }
-
-
-        //calcula e imprime a saida (com 2 casas decimais):
-
-        float saida = valorSalario - valorImposto + valorBeneficio;
-        System.out.println(String.format("%.2F", saida));
-        
     }
-
 }
-
 
