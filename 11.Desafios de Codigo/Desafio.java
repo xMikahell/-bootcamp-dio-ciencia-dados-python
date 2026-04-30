@@ -47,7 +47,7 @@ public class Desafio {
             valorImposto = 0.10F * valorSalario;    
         }
         else {
-            valorImposto = 0.15F * valorSalario;    
+            valorImposto = 0.15F * valorSalario;  
         }
 
 
