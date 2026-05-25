@@ -1,0 +1,115 @@
+SGBD
+
+Funcionalidades básicas:
+
+C = creat
+R = read
+U = update
+D = Delete
+
+Estrutura de um Bando de Dados Relacional é basicamente composto por um DATABASE ou Bando de Dados
+que vai ser armazenado conjuntos de todas as tabelas.
+Bando de dados são formados por várias tabelas.
+
+Características Princinpais de Bando de Dados Relacional
+
+1. Relacionamento entre tabelas
+2. Linguagem de Consulta Estruturada (SQL)
+3. Integridade referencial
+4. Normalização de dados
+5. Segurança
+6. Flexibilidade e extensibilidade
+7. Suporte a transação ACID
+
+ACID
+
+A = Atomicidade
+C = Consistência
+I = Isolamento
+D = Durabilidade 
+
+As transações ACID, elas são conjuntos de propriedades de um bando de dados relacional
+que garante que as operações elas sejam executadas de uma forma segura e confiável,
+para ter as nossas informações consistentes.
+
+
+SQL
+
+SQL - Structured Query Linguage 
+
+
+Organização do SQL
+
+1. DQL - Linguagem de Consulta de Dados
+1.1 SELECT;
+
+2. DML - Linguagem de Manipulação de Dados
+2.1 INSERT, UPDATE e DELETE 
+
+3. DDL - Linguagem de Definição de Dados
+3.1 CREAT, ALTER, DROP;
+
+4. DCL - Linguagem de Controle de Dados
+4.1 GRANT, REVOKE
+
+5. DTL - Linguagem de transação de dados
+5.1 BEGIN, COMMIT, ROLLBACK
+
+MER e DER: Modelagem de Bancos de Dados 
+
+O Modelo Entidade-Relacionamento (MER) é representado
+através de doagramas chamados Diagramas
+Entidade-Relacional(DER)
+
+Entidades 
+
+As entidades são noemadas com substantivos concretos ou
+abstratos que representem de forma clara  sua função 
+dentro do domínio. 
+
+usuarios  
+          destinos
+reservas
+
+usasse retangulo para essas entidades 
+
+
+Atributos 
+
+Os Atributos são as Características ou propriedades das entidades.
+Eles descrevem informações especificas sobre uma Entidade.
+
+
+
+             nomes
+usuarios  =  email
+             senha  
+
+Atributos são representados por elipses 
+nos diagramas de hoje em dia aceita 
+
+usuarios  
+---------
+nome
+---------
+email 
+---------
+senha 
+
+uma lista como se pode ver
+
+
+agora vamos ao exemplo via Creately 
+
+
+Relacionamentos
+
+Os Relacionamentos representam  as assosciações entre entidades
+
+Cardianilidade 
+
+Relacionamento 1..1         (uma para um)
+Relacionamento 1..n ou 1..* (uma para muitos)
+Relacionamento n..n ou *..* (muitos para muitos)
+
+
